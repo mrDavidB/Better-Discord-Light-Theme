@@ -1,4 +1,4 @@
-//META{"name":"BetterLightTheme","description":"My shoddy attempt at making a decent light theme. Make sure you are set to dark theme in settings! You can get to me @MrDavidB#7843","author":"MrDavidB","version":"1.0"}*//
+//META{"name":"BetterLightTheme","description":"My shoddy attempt at making a decent light theme. Make sure you are set to dark theme in settings! You can get to me @MrDavidB#7843","author":"MrDavidB","version":"1.0.2"}*//
 
 /*
 make sure you are using BD Blue and using the dark theme. It might 
@@ -171,9 +171,19 @@ CHAT AREA
     background: #d8d8d8;
 }
 
-/* new messages chat divider */
+/* new messages divider */
 .theme-dark .friends-table .messages .divider.divider-red>span, .theme-dark .messages-wrapper .messages .divider.divider-red>span {
     color: rgba(255, 255, 255, 0.8);
+}
+
+/* chat date divider background */
+.theme-dark .friends-table .messages .divider:before, .theme-dark .friends-table .messages .divider span, .theme-dark .messages-wrapper .messages .divider:before, .theme-dark .messages-wrapper .messages .divider span {
+    background-color: #bbbbbb;
+}
+
+/* chat date divider text */
+.theme-dark .friends-table .messages .divider:not(.red) span, .theme-dark .messages-wrapper .messages .divider:not(.red) span {
+    color: black;
 }
 
 /* 
@@ -252,11 +262,11 @@ USER POPOUT MENU
 
 /* 
 ==============================================================
-DMS
+DIRECT MESSAGES SCREEN
 ==============================================================
 */
 
-/* DM's container */
+/* DM's chat container */
 .private-channels {
     background-color: white;
 }
@@ -268,7 +278,6 @@ DMS
 }
 
 /* user name */
-
 .private-channels .channel .channel-name {
     color: rgb(0, 0, 0);
     opacity: 1;
@@ -278,6 +287,12 @@ DMS
 .private-channels .channel.selected {
     /* color: #fff; */
     background-color: #bbbbbb;
+}
+
+/* user selected inner portion */
+.private-channels .channel.selected a {
+    background-color: #bbbbbb;
+    color: #fff;
 }
 
 /* user hover outside border */
@@ -290,6 +305,53 @@ DMS
 .private-channels .channel:hover a {
     background-color: #bbbbbb;
     color: #fff;
+}
+
+/* dm's friends list container */
+.theme-dark .friends-table, .theme-dark .messages-wrapper {
+    background-color: #ffffff;
+}
+
+/* dm's friends list username text */
+.theme-dark #friends .friends-table .friends-row .friends-column-name {
+    color: black;
+}
+
+/* dm's friends list user status text */
+.theme-dark #friends .friends-table .friends-row .friends-column-status {
+    color: hsl(0, 0%, 0%);
+}
+
+/* dm's friends list hover over user behaviour */
+.theme-dark #friends .friends-table .friends-row:hover {
+    background: #bbbbbb;
+    /* border-color: transparent; */
+}
+
+/* background colour of the buttons for video/audio calls when hovering over user */
+.theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action {
+    background-color: #bbbbbb;
+}
+
+/* dm's friends list header */
+.theme-dark .headerBar-cxbhPD {
+    background: #ffffff;
+}
+
+/* tabs in the header for filtering friends online/pending/blocked/all */
+.theme-dark #friends .tab-bar .tab-bar-item {
+    color: black;
+}
+
+/* tabs hover behaviour */
+.theme-dark #friends .tab-bar .tab-bar-item:hover:not(.selected) {
+    background-color: #bbbbbb;
+}
+
+/* tabs selected behaviour */
+.theme-dark #friends .tab-bar .tab-bar-item.selected {
+    background-color: #bbbbbb;
+    color: #000000;
 }
 
 /* 
@@ -305,4 +367,9 @@ STRANGE FIXES
 /*hides 2 little corners of the channel selector being wrong colour */
 .guilds-wrapper {
 	margin-right: -4px;
+}
+
+/* fixes a small bar of black at the top of the dm's friends list, might be redundant */
+.theme-dark #friends {
+    background-color: #ffffff;
 }
