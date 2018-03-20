@@ -4,7 +4,10 @@
 make sure you are using BD Blue and using the dark theme. It might 
 work without BDB but you definitely need the dark theme on. Be warned
 none of the settings pages are customized, and I am not using any custom
-icons, mainly because I can't be bothered. Feel free to try yourself. 
+icons, mainly because I can't be bothered.
+
+Oh, and do whatever you want with this, modify, redistribute, break it.
+I don't really care. Just don't profit from it.
 */
 
 /* server selector panel */
@@ -245,6 +248,48 @@ USER POPOUT MENU
 /* add role popout role hovered */
 .theme-dark #autocomplete-popout .row.selected {
     background: #909090;
+}
+
+/* 
+==============================================================
+DMS
+==============================================================
+*/
+
+/* DM's container */
+.private-channels {
+    background-color: white;
+}
+
+/* direct messages header */
+.private-channels header {
+    color: #000;
+    opacity: 1;
+}
+
+/* user name */
+
+.private-channels .channel .channel-name {
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+/* user selected */
+.private-channels .channel.selected {
+    /* color: #fff; */
+    background-color: #bbbbbb;
+}
+
+/* user hover outside border */
+.private-channels .channel:hover {
+    color: #fff;
+    background-color: #bbbbbb;
+}
+
+/* user hover inside portion */ 
+.private-channels .channel:hover a {
+    background-color: #bbbbbb;
+    color: #fff;
 }
 
 /* 
