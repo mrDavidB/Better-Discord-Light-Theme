@@ -1,0 +1,263 @@
+//META{"name":"BetterLightTheme","description":"My shoddy attempt at making a decent light theme. Make sure you are set to dark theme in settings! You can get to me @MrDavidB#7843","author":"MrDavidB","version":"1.0"}*//
+
+/*
+make sure you are using BD Blue and using the dark theme. It might 
+work without BDB but you definitely need the dark theme on. Be warned
+none of the settings pages are customized, and I am not using any custom
+icons, mainly because I can't be bothered. Feel free to try yourself. 
+*/
+
+/* server selector panel */
+.guilds {
+    background:white;
+}
+
+/* 
+========================================================
+CHANNEL SELECTOR AREA
+========================================================
+*/
+
+/* channel selector */
+.scroller-NXV0-d {
+    background: white!Important;
+}
+
+/* text channel selected behaviour */
+.contentSelectedText-3j5CXt {
+    background-color: rgb(124, 125, 125);
+}
+
+/*text channel hovered behaviour */
+.contentHoveredText-2HYGIY {
+	background-color: rgb(124, 125, 125);
+}
+
+/* voice channel hovered behaviour */
+.contentHoveredVoice-3qGNKh {
+	background-color: rgb(124, 125, 125);
+}
+
+/*hover over user in voice channel behaviour */
+.nameHovered-28u_Fz {
+	color: black;
+}
+
+/* server name heading */
+.header-1tSljs {
+    color: black;
+    background-color: white;
+}
+
+/* server name heading hover behaviour */
+.header-1tSljs:hover {
+    background-color: #909090;
+    color: white;
+}
+
+/* account box w/ voice controls and settings */
+.container-iksrDt {
+	background-color: white;
+	color: black;
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+/* audio control buttons */
+.button-1aU9q1 {
+	background-color: #909090;
+}
+
+/* 
+======================================================================
+MEMBER LIST AREA
+======================================================================
+*/
+
+/* channel member list box */
+.theme-dark .channel-members {
+    background-color: white;
+}
+
+/*channel member text */
+.theme-dark .channel-members .member {
+	color: black;
+}
+
+/* channel member list online and offline headers */
+.theme-dark .channel-members h2 {
+    color: #000000;
+}
+
+/* channel member list hover member behaviour */
+.theme-dark .channel-members .member.popout-open, .theme-dark .channel-members .member:hover {
+    background: linear-gradient(90deg,rgba(125, 125, 125, 0.49) 85%,rgba(0, 0, 0, 0.3));
+}
+
+/* icons above the member list */
+.icon-mr9wAc {
+    background-color: #909090;
+}
+
+/* search bar search icon */
+.search .search-bar-icon {
+    background-color: #909090;
+}
+
+/* the search bar itself */
+.theme-dark .search .search-bar {
+    background-color: #909090;
+}
+
+/* 
+==================================================================================
+CHAT AREA
+==================================================================================
+*/
+
+/* message content */
+.theme-dark .message-group .comment .markup {
+    color: black;
+	font-size: 16px;
+}
+
+/* chat background */
+.chat .messages {
+    background-color: white;
+}
+
+/* usernames in chat */
+.theme-dark .message-group h2 strong {
+    color: black;
+}
+
+/* message timestamps */
+.theme-dark .message-group h2 .timestamp {
+    color: black;
+}
+
+/* chat scrollbar path */
+.theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-track-piece, .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* the actual scrollbar */
+.theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb, .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-thumb {
+    background-color: #a7a7a7;
+    border-color: #a7a7a7;
+}
+
+/* channel topic header */
+.theme-dark .topic-1KFf6J {
+    color: hsl(0, 0%, 0%);
+}
+
+/* channel name header container */
+.theme-dark .title-qAcLxz {
+    background-color: white;
+}
+
+/* the channel name itself */
+.theme-dark .channelName-1G03vu, .theme-dark .groupDM-3gzbyG .channelName-1G03vu, .theme-dark .groupDMManaged-2z2S1A .channelName-1G03vu, .theme-dark .input-autosize-input, .theme-dark .input-autosize-input:focus {
+    color: black;
+}
+
+/* inline code in chat */
+.theme-dark .message-group .comment .markup code.inline, .theme-dark .message-group .comment .markup pre code {
+    background: #d8d8d8;
+}
+
+/* new messages chat divider */
+.theme-dark .friends-table .messages .divider.divider-red>span, .theme-dark .messages-wrapper .messages .divider.divider-red>span {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* 
+=============================================================
+MESSAGE BOX AREA
+=============================================================
+*/
+
+.theme-dark .textArea-20yzAH {
+    color: hsl(0, 0%, 0%);
+    background-color: rgba(179, 179, 179, 0);
+}
+
+/* person is typing... container */
+.theme-dark .typing-3eiiL_ {
+	background-color: white;
+}
+
+/* person is typing... text */
+.theme-dark .typing-3eiiL_ span {
+    color: black;
+}
+
+/* message entry area */
+.theme-dark .chat form {
+	background-color: white;
+}
+
+/* 
+===============================================================
+USER POPOUT MENU
+===============================================================
+*/
+/* user popout menu upper half*/
+.theme-dark .headerNormal-3Vn9nT {
+    background-color: #ffffff;
+}
+
+/* user popout menu name */
+.headerName-3U6eDn, .headerTagUsernameNoNickname-22Y2PV {
+    color: #000;
+}
+
+/* user popout menu account name */
+.headerTag-I11IJx {
+    color: hsl(0, 0%, 0%);
+}
+
+/* user popout menu lower half */
+.theme-dark .body-3ljq11, .theme-dark .footer-2wFs91 {
+    background-color: #ffffff;
+    color: hsla(0, 0%, 0%, 0.8);
+}
+
+/* add note behaviour on focus */
+.theme-dark .note-2AtC_s textarea:focus {
+    background-color: #ffffff;
+	color: black;
+}
+
+/* add role popout lower half */
+.theme-dark #autocomplete-popout section {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* add role pop out header */
+#autocomplete-popout header {
+    background-color: white;
+}
+
+/* add role popout role hovered */
+.theme-dark #autocomplete-popout .row.selected {
+    background: #909090;
+}
+
+/* 
+==============================================================
+STRANGE FIXES
+==============================================================
+*/
+/* gets rid of some wierd black bars on either side of the message box */
+.content {
+	background: white!Important;
+}
+
+/*hides 2 little corners of the channel selector being wrong colour */
+.guilds-wrapper {
+	margin-right: -4px;
+}
